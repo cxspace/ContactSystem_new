@@ -1,0 +1,168 @@
+<<html ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,width=device-width">
+    <title>留言板</title>
+    <link href="css/ionic.css" rel="stylesheet" >
+    <script src="js/ionic.bundle.js"></script>
+
+    <script type="text/javascript">
+        angular.module('ionicApp', ['ionic'])
+
+                .controller('SlideController', function($scope) {
+
+                    $scope.myActiveSlide = 1;
+
+                })
+    </script>
+
+
+</head>
+<body ng-controller="SlideController">
+
+<div class="bar bar-header bar-positive">
+    <a class="button button-icon icon ion-chevron-left" href="index.html"></a>
+    <div class="h1 title"><b>留言板</b></div>
+</div>
+
+<div class="content has-header ionic-pseudo">
+
+    <div class="list">
+        <!--使用 item-avatar 来创建一个带头像的列表：-->
+        <li class="item item-avatar">
+            <img src="images/ic_launcher.png">
+            <h2>当前用户</h2>
+            <p>442961832</p>
+        </li>
+    </div>
+    <ion-scroll zooming="true" direction="xy" style="width: 100%; height: 78%">
+
+
+            <form method="post" action="#">
+                <div class="list list-inset">
+                    <label class="item item-input">
+                        <textarea rows="5" placeholder="说点什么吧..."></textarea>
+                    </label>
+                </div>
+                <div class="padding">
+                    <button class="button button-block button-calm text-center">发表留言</button>
+                </div>
+            </form>
+
+        <div class="list card">
+
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。
+            </div>
+            <br>
+            <div class="item item-text-wrap">
+                <h3>cxspace</h3>
+                基本卡片，包含了文本信息。结束
+                基本卡片，包含了文本信息。结束
+            </div>
+            <br>
+
+            <div class="button-bar">
+                <a class="button text-left button-clear" href="">上一页</a>
+                <a class="button-clear">1</a>
+                <a class="button text-right button-clear" href="">下一页</a>
+            </div>
+
+            <br>
+            <br><br><br>
+
+        </div>
+
+        <br>
+
+    </ion-scroll>
+</div>
+
+<div class="tabs tabs-icon-top tabs-color-calm">
+    <a class="tab-item" href="index.html">
+        <i class="icon ion-home"></i>
+        主页
+    </a>
+    <a class="tab-item active" href="photoList.html">
+        <i class="icon ion-ios-photos"></i>
+        照片墙
+    </a>
+    <a class="tab-item" href="setting.html">
+        <i class="icon ion-gear-a"></i>
+        设置
+    </a>
+</div>
+
+</body>
+</html>

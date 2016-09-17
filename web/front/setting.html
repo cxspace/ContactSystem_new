@@ -1,0 +1,85 @@
+<html ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,width=device-width">
+    <title>用户设置</title>
+    <link href="css/ionic.css" rel="stylesheet" >
+    <script src="js/ionic.bundle.js"></script>
+
+
+</head>
+<body ng-controller="SlideController">
+
+<div class="bar bar-header bar-positive">
+    <a class="button button-icon icon ion-chevron-left" href="index.html"></a>
+    <div class="h1 title"><b>用户设置</b></div>
+</div>
+
+<div class="content has-header ionic-pseudo">
+
+    <div class="list">
+        <!--使用 item-avatar 来创建一个带头像的列表：-->
+        <li class="item item-avatar">
+            <img src="images/ic_launcher.png">
+            <h2>当前用户</h2>
+            <p>442961832</p>
+        </li>
+    </div>
+    <ion-scroll zooming="true" direction="xy" style="width: 100%; height: 86%">
+        <div class="list list-inset">
+
+            <a class="item item-icon-left" href="changePassword.html">
+                <i class="icon ion-edit"></i>
+                修改登录密码
+            </a>
+
+            <a class="item item-icon-left" href="changeHeadImg.html">
+                <i class="icon ion-person"></i>
+                修改头像
+            </a>
+
+            <a class="item item-icon-left" href="changePhone.html">
+                <i class="icon ion-iphone"></i>
+                修改通讯信息
+            </a>
+
+            <a class="item item-icon-left" href="sendSuggest.html">
+                <i class="icon ion-chatbubble-working"></i>
+                发送建议
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <a  class="item item-assertive text-center" href="#">
+                退出登录
+            </a>
+
+
+        </div>
+
+
+    </ion-scroll>
+</div>
+
+<div class="tabs tabs-icon-top tabs-color-calm">
+    <a class="tab-item" href="index.html">
+        <i class="icon ion-home"></i>
+        主页
+    </a>
+    <a class="tab-item" href="contact.html">
+        <i class="icon ion-person-stalker"></i>
+        通讯录
+    </a>
+    <a class="tab-item active" href="setting.html">
+        <i class="icon ion-gear-a"></i>
+        设置
+    </a>
+</div>
+
+</body>
+</html>

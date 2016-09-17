@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.cxspace.entity" auto-import="true">
+
+    <class name="Contact" table="contact">
+        <id name="id" column="id">
+            <generator class="assigned"></generator>
+        </id>
+
+        <property name="name" column="name"></property>
+
+        <property name="college" column="college"></property>
+
+        <property name="major" column="major"></property>
+
+        <property name="city" column="city"></property>
+
+        <property name="phone" column="phone"></property>
+
+        <property name="pointx" column="pointx"></property>
+
+        <property name="pointy" column="pointy"></property>
+
+        <property name="pic" column="pic"></property>
+
+        <property name="yuliu" column="yuliu"></property>
+
+    </class>
+
+
+</hibernate-mapping>

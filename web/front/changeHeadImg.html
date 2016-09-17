@@ -1,0 +1,64 @@
+<html ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,width=device-width">
+    <title>修改头像</title>
+    <link href="css/ionic.css" rel="stylesheet" >
+    <script src="js/ionic.bundle.js"></script>
+
+
+</head>
+<body ng-controller="SlideController">
+
+<div class="bar bar-header bar-positive">
+    <a class="button button-icon icon ion-chevron-left" href="setting.html"></a>
+    <div class="h1 title"><b>修改头像</b></div>
+</div>
+
+<div class="content has-header ionic-pseudo">
+
+    <div class="list">
+        <!--使用 item-avatar 来创建一个带头像的列表：-->
+        <li class="item item-avatar">
+            <img src="images/ic_launcher.png">
+            <h2>当前用户</h2>
+            <p>442961832</p>
+        </li>
+    </div>
+
+    <form method="post" action="">
+        <div class="list list-inset">
+
+            <label class="item item-text-wrap">
+                请选择一张小于0.5M的头像
+            </label>
+            <label class="item item-input item-stacked-label">
+                <input type="file" placeholder="选择头像...">
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" type="submit">上传头像</button>
+        </div>
+
+    </form>
+
+
+</div>
+
+<div class="tabs tabs-icon-top tabs-color-calm">
+    <a class="tab-item" href="index.html">
+        <i class="icon ion-home"></i>
+        主页
+    </a>
+    <a class="tab-item" href="contact.html">
+        <i class="icon ion-person-stalker"></i>
+        通讯录
+    </a>
+    <a class="tab-item active" href="setting.html">
+        <i class="icon ion-gear-a"></i>
+        设置
+    </a>
+</div>
+
+</body>
+</html>
